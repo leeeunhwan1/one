@@ -1,0 +1,1076 @@
+ /* INDEX 페이지 스타일_시작 */
+ 
+ 
+ body{
+            background-color: #fffcf7;
+            font-family: 'Noto Sans KR', sans-serif;
+            
+        }
+
+        #logoStyle {
+            display:block; 
+            margin-left:auto; 
+            margin-right: auto; 
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .frame{
+            margin: 30px 150px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav{
+            background-color: #5DAEDA;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            margin-top: 50px;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+
+
+        }
+        li {            
+            display: inline;				/*메뉴 한줄에 배열하기*/
+            text-align: center;
+            font-size: 18px;
+            margin:0;
+            margin-left: 30px;
+        }
+
+        li a {
+            color: #f9fbff;
+            text-decoration:none;
+        }
+
+        li a:hover {
+            background-color: rgb(17, 73, 138);
+        }
+
+        footer{
+            position: static; 
+            left:0px; 
+            bottom:0px; 
+            height:60px; 
+            width:100%; 
+            background:grey; 
+            color: white; 
+            text-align:center;
+        }
+        /*자취러들 모여라 표 부분*/
+        #board_area {
+            width: 900px;
+            position: relative;
+        }
+        .list-table {
+            margin-top: 20px;
+            width: 1100px;
+            text-align: center;
+        }
+        .list-table thead th{
+            height:40px;
+            border-top:2px solid #09C;
+            border-bottom:1px solid #CCC;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .list-table tbody td{
+            text-align:center;
+            padding:10px 0;
+            border-bottom:1px solid #CCC; height:20px;
+            font-size: 14px 
+        }
+
+        /* 첫번째 항목의 배경설명 부분 */
+        .backgroundExplain {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 150%;
+            width:70%; 
+            height:200px; 
+            padding:20px; 
+            margin:auto; 
+            border:2px solid black; 
+            border-radius: 10px; 
+            color:#48494b; 
+            box-shadow: 4px 4px 4px;
+
+        }
+
+        /* 두번째 항목, 가로로 스크롤 지정된 부분 */
+        #channel {
+            display: flex; 
+            overflow-x:  scroll; 
+            overflow-y: hidden; 
+            width:70%; 
+            height:200px; 
+            padding:auto; 
+            margin:auto; 
+            border:2px solid black; 
+            border-radius: 10px; 
+            color:#48494b;
+        }
+
+        /* 자취밥상 항목의 이미지 크기 설정 */
+        .channelImg {
+            height: 190px; 
+            margin-right: 10px;
+        }
+
+        /* 자취밥상 밑에 더 보기 링크 꾸미기 */
+        #more {
+            float: right; 
+            border: none; 
+            margin-top: 30px; 
+            margin-right: 200px;
+        }
+
+        /* 자취 꿀 사이트 박스 꾸미기 */
+        #siteLink {
+            width:300px; 
+            height:200px; 
+            border-radius:10px; 
+            background-color: rgb(95, 151, 214); 
+            float:left; 
+            margin-right:50px;
+            opacity: 0.8;
+            transition: opacity 1s, background-color 1s;
+            box-shadow: 6px 6px 6px 6px;
+        }
+
+        /* 자취 꿀 사이트 박스에 효과 넣기 */
+        #siteLink:hover {
+            opacity: 1;
+            background-color: rgb(30, 111, 202) ;
+        }
+
+        /* 자취 꿀 사이트 박스 내에 폰트 꾸미기 */
+        #siteLinkFont {
+            color: #0a2136; 
+            font-size: 30px; 
+            font-weight: 200px; 
+            text-align:center; 
+            padding:40px;
+            text-decoration: none;
+            
+            
+            
+        }
+
+        #noUnderline {
+            text-decoration: none;
+        }
+
+        #icon {
+            color:#20496f;
+        }
+
+       
+        
+
+
+body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoStyle {
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+/* 첫번째 항목의 배경설명 부분 */
+.backgroundExplain {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 150%;
+    width:70%; 
+    height:200px; 
+    padding:20px; 
+    margin:auto; 
+    border:2px solid black; 
+    border-radius: 10px; 
+    color:#48494b; 
+    box-shadow: 4px 4px 4px;
+
+}
+
+/* 두번째 항목, 가로로 스크롤 지정된 부분 */
+#channel {
+    display: flex; 
+    overflow-x:  scroll; 
+    overflow-y: hidden; 
+    width:70%; 
+    height:200px; 
+    padding:auto; 
+    margin:auto; 
+    border:2px solid black; 
+    border-radius: 10px; 
+    color:#48494b;
+}
+
+/* 자취밥상 항목의 이미지 크기 설정 */
+.channelImg {
+    height: 190px; 
+    margin-right: 10px;
+}
+
+/* 자취밥상 밑에 더 보기 링크 꾸미기 */
+#more {
+    float: right; 
+    border: none; 
+    margin-top: 30px; 
+    margin-right: 200px;
+}
+
+/* 자취 꿀 사이트 박스 꾸미기 */
+#siteLink {
+    width:280px; 
+    height:200px; 
+    border-radius:10px; 
+    background-color: rgb(95, 151, 214); 
+    float:left; 
+    margin-right:60px;
+    opacity: 0.8;
+    transition: opacity 1s, background-color 1s;
+    box-shadow: 6px 6px 6px 6px;
+}
+
+/* 자취 꿀 사이트 박스에 효과 넣기 */
+#siteLink:hover {
+    opacity: 1;
+    background-color: rgb(30, 111, 202) ;
+}
+
+/* 자취 꿀 사이트 박스 내에 폰트 꾸미기 */
+#siteLinkFont {
+    color: #0a2136; 
+    font-size: 30px; 
+    font-weight: 200px; 
+    text-align:center; 
+    padding:40px;
+    text-decoration: none;
+    
+    
+    
+}
+
+#noUnderline {
+    text-decoration: none;
+}
+
+#icon {
+    color:#20496f;
+}
+
+
+ /* INDEX 페이지 스타일_시작 */
+
+
+
+
+
+
+
+
+ /* 자취밥상 페이지 스타일_시작 */
+
+ body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoStyle {
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+.card:hover {
+    background-color: rgb(255, 206, 223);
+}
+
+.box {
+    width:300px; 
+    height:200px; 
+    border-radius:10px; 
+    background-color: rgb(24, 11, 53); 
+    float:left; 
+    margin-right:70px; 
+    box-shadow: 6px 6px 6px 6px;
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+
+.box:hover {
+    opacity: 1;
+}
+
+/* 화면 중간에 "난이도" 글자 색상 지정*/
+#difficulty {
+   color: rgb(241, 72, 42);
+   
+}
+
+/* 화면 중간에 글 문단 표시 */
+#contexpl {
+width:250px; 
+height:250px; 
+display: block; 
+margin-left: auto; 
+margin-right: auto;
+}
+
+/* 3개의 난이도 박스 내에 폰트 설정 */
+.levelFont {
+color: white; 
+font-size: 25px; 
+text-align:center; 
+padding:20px;
+}
+
+
+/* 자취밥상 페이지 스타일_끝 */
+
+
+
+/* 자취밥상의 난이도 하_시작 */
+
+body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoStyle {
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+.card:hover {
+    background-color: rgb(255, 206, 223);
+}
+
+/*사진 여러개 배열*/
+.cooking {
+    display: flex; 
+    overflow-x:  scroll; 
+    overflow-y: hidden; 
+    width:40%; 
+    height:300px; 
+    border: 1px solid black;  
+    float:left
+}
+
+.cookingTitle {
+    background-color: rgb(243, 247, 194); 
+    width:500px
+}
+
+/* 메뉴바 아래에 현재 페이지의 난이도 표시해주는 부분 꾸미기 */
+.mealDifficulty {
+    background-color: rgb(207, 238, 145); 
+    width:250px
+}
+
+/* 각 블럭 항목 배치하기 */
+.bundle {
+    float:left; 
+    margin-left: 100px;
+}
+
+/* Youtube 채널로 이동할 수 있는 링크버튼 꾸미기 */
+.theboki {
+    position: absolute; 
+    width:80px; 
+    height:40px; 
+    text-decoration-line: none;
+    color: white; 
+    text-align: center; 
+    float: right; 
+    background-color: red; 
+    margin-top: 90px;
+}
+
+
+.sector1{
+    display:inline;
+}
+
+.sector3 {
+    display:inline; 
+    margin-top:200px; 
+    margin-bottom:200px;
+}
+
+#mealMargin {
+    margin: 30px 0px 80px 10px;
+}
+
+
+/* 자취밥상의 난이도 하_끝 */
+
+
+
+
+
+/* 자취밥상의 난이도 중_시작 */
+
+
+body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoStyle {
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+}
+
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+.card:hover {
+    background-color: rgb(255, 206, 223);
+}
+
+/*사진 여러개 배열*/
+.cooking {
+    display: flex; 
+    overflow-x:  scroll; 
+    overflow-y: hidden; 
+    width:40%; 
+    height:300px; 
+    border: 1px solid black;  
+    float:left
+}
+
+.cookingTitle {
+    background-color: rgb(243, 247, 194); 
+    width:500px
+}
+
+/* 메뉴바 아래에 현재 페이지의 난이도 표시해주는 부분 꾸미기 */
+.mealDifficulty {
+    background-color: rgb(207, 238, 145); 
+    width:250px
+}
+
+  /* 각 블럭 항목 배치하기 */
+.bundle {
+    float:left; 
+    margin-left: 100px;
+}
+
+/* Youtube 채널로 이동할 수 있는 링크버튼 꾸미기 */
+.theboki {
+    position: absolute; 
+    width:80px; 
+    height:40px; 
+    text-decoration-line: none;
+    color: white; 
+    text-align: center; 
+    float: right; 
+    background-color: red; 
+    margin-top: 90px;
+}
+
+.sector1{
+    display:inline;
+}
+
+.sector2{
+    display:inline; 
+    margin-top:200px; 
+    margin-bottom:100px;
+}
+
+.sector3 {
+    display:inline; 
+    margin-top:200px; 
+    margin-bottom:200px;
+}
+
+#mealMargin {
+    margin: 30px 0px 80px 10px;
+}
+
+/* 자취밥상의 난이도 중_끝 */
+
+
+/* 자취밥상의 난이도 상_시작 */
+body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoStyle {
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+.card:hover {
+    background-color: rgb(255, 206, 223);
+}
+
+/*사진 여러개 배열*/
+.cooking {
+    display: flex; 
+    overflow-x:  scroll; 
+    overflow-y: hidden; 
+    width:40%; 
+    height:300px; 
+    border: 1px solid black;  
+    float:left
+}
+
+.cookingTitle {
+    background-color: rgb(243, 247, 194); 
+    width:500px
+}
+
+/* 메뉴바 아래에 현재 페이지의 난이도 표시해주는 부분 꾸미기 */
+.mealDifficulty {
+    background-color: rgb(207, 238, 145); 
+    width:250px
+}
+
+  /* 각 블럭 항목 배치하기 */
+.bundle {
+    float:left; 
+    margin-left: 100px;
+}
+
+/* Youtube 채널로 이동할 수 있는 링크버튼 꾸미기 */
+.theboki {
+    position: absolute; 
+    width:80px; 
+    height:40px; 
+    text-decoration-line: none;
+    color: white; 
+    text-align: center; 
+    float: right; 
+    background-color: red; 
+    margin-top: 90px;
+}
+
+.sector1{
+    display:inline;
+}
+
+.sector2{
+    display:inline; 
+    margin-top:200px; 
+    margin-bottom:100px;
+}
+
+.sector3 {
+    display:inline; 
+    margin-top:200px; 
+    margin-bottom:200px;
+}
+
+#mealMargin {
+    margin: 30px 0px 80px 10px;
+}
+
+/* 자취밥상의 난이도 상_끝 */
+
+
+
+
+/* 꿀사이트_인테리어_시작 */
+body{
+    background-color: #fffcf7;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+#logoImage {
+    display:block; 
+    margin-left:auto;
+    margin-right: auto; 
+    margin-top: 30px;
+}
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: #5DAEDA;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+
+}
+li {            
+    display: inline;				/*메뉴 한줄에 배열하기*/
+    text-align: center;
+    font-size: 18px;
+    margin:0;
+    margin-left: 30px;
+}
+
+li a {
+    color: #f9fbff;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: rgb(17, 73, 138);
+}
+
+footer{
+    position: static; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%; 
+    background:grey; 
+    color: white; 
+    text-align:center;
+}
+/*자취러들 모여라 표 부분*/
+#board_area {
+    width: 900px;
+    position: relative;
+}
+.list-table {
+    margin-top: 20px;
+    width: 1100px;
+    text-align: center;
+}
+.list-table thead th{
+    height:40px;
+    border-top:2px solid #09C;
+    border-bottom:1px solid #CCC;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list-table tbody td{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #CCC; height:20px;
+    font-size: 14px 
+}
+
+#sideLocation {
+    margin: 30px 0px 80px 10px;
+}
+
+#side {
+    background-color: rgb(212, 197, 241); 
+    width:350px;
+}
+
+.card:hover {
+    background-color: rgb(255, 206, 223);
+}
+
+/*카드 메뉴 스타일입니다*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    display: inline;
+
+    
+
+    }
+
+    #array {
+      display: flex;
+    }
+
+.category {
+    color: grey;
+    font-size: 22px;
+    }
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(148, 17, 71);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    }
+
+.card button:hover {
+    opacity: 0.7;
+    }
+/* 꿀사이트_인테리어_끝 */
+
+
+
+

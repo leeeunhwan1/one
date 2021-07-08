@@ -1,0 +1,237 @@
+<!--
+    작성자:김다운
+    학번:21801006
+    작성목적: 두번째 자취밥상 난이도 중 페이지 입니다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--반응형 웹으로 설정하겠습니다-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자취밥상</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #fffcf7;
+            font-family: 'Noto Sans KR', sans-serif;
+            
+        }
+
+        #logoStyle {
+            display:block; 
+            margin-left:auto; 
+            margin-right: auto; 
+            margin-top: 30px;
+        }
+
+
+        .frame{
+            margin: 30px 150px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav{
+            background-color: #5DAEDA;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            margin-top: 50px;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+
+
+        }
+        li {            
+            display: inline;				/*메뉴 한줄에 배열하기*/
+            text-align: center;
+            font-size: 18px;
+            margin:0;
+            margin-left: 30px;
+        }
+
+        li a {
+            color: #f9fbff;
+            text-decoration:none;
+        }
+
+        li a:hover {
+            background-color: rgb(17, 73, 138);
+        }
+
+        footer{
+            position: static; 
+            left:0px; 
+            bottom:0px; 
+            height:60px; 
+            width:100%; 
+            background:grey; 
+            color: white; 
+            text-align:center;
+        }
+        /*자취러들 모여라 표 부분*/
+        #board_area {
+            width: 900px;
+            position: relative;
+        }
+        .list-table {
+            margin-top: 20px;
+            width: 1100px;
+            text-align: center;
+        }
+        .list-table thead th{
+            height:40px;
+            border-top:2px solid #09C;
+            border-bottom:1px solid #CCC;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .list-table tbody td{
+            text-align:center;
+            padding:10px 0;
+            border-bottom:1px solid #CCC; height:20px;
+            font-size: 14px 
+        }
+
+        .card:hover {
+            background-color: rgb(255, 206, 223);
+        }
+
+        /*사진 여러개 배열*/
+        .cooking {
+            display: flex; 
+            overflow-x:  scroll; 
+            overflow-y: hidden; 
+            width:30%; 
+            height:300px; 
+            border: 1px solid black;  
+            float:left
+        }
+
+        .cookingTitle {
+            background-color: rgb(243, 247, 194); 
+            width:500px
+        }
+
+        /* 메뉴바 아래에 현재 페이지의 난이도 표시해주는 부분 꾸미기 */
+        .mealDifficulty {
+            background-color: rgb(207, 238, 145); 
+            width:250px
+        }
+
+          /* 각 블럭 항목 배치하기 */
+        .bundle {
+            float:left; 
+            margin-left: 100px;
+        }
+
+        /* Youtube 채널로 이동할 수 있는 링크버튼 꾸미기 */
+        .theboki {
+            position: absolute; 
+            width:80px; 
+            height:40px; 
+            text-decoration-line: none;
+            color: white; 
+            text-align: center; 
+            float: right; 
+            background-color: red; 
+            margin-top: 90px;
+        }
+
+        .sector1{
+            display:inline;
+        }
+
+        .sector2{
+            display:inline; 
+            margin-top:200px; 
+            margin-bottom:100px;
+        }
+
+        .sector3 {
+            display:inline; 
+            margin-top:200px; 
+            margin-bottom:200px;
+        }
+
+        #mealMargin {
+            margin: 30px 0px 80px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <!--로고 배치-->
+        <img src="../images/logo_final.png" alt="logo" style="display:block; margin-left:auto; margin-right: auto; margin-top: 30px; width: 200px; height: 200px;">
+        <!--메뉴 배치-->
+        <ul class="nav">
+            <li><a class="nav-menu" href="../index.html">HOME</a></li>
+            <li><a class="nav-menu" href="../meal/meal.html">자취밥상</a></li>
+            <li><a class="nav-menu" href="../site/site.html">자취 <span style="color:rgb(255, 195, 84)">꿀</span> 사이트</a></li>
+            <li><a class="nav-menu" href="../community/community_list.html">자취러들 모여라</a></li>
+        </ul>
+        <div id="mealMargin">
+            <a style ="float:right;" href="../meal/meal.html"><button style="width:90px; height: 30px; background-color:#e4f3ff">뒤로가기</button></a> 
+            <h2 class="mealDifficulty">자취밥상 > 난이도 중</h2>
+        </div>
+        
+        <div class="sector1">
+            <div class="cooking">                    
+                <img src="../images/cook11.PNG">
+                <img src="../images/cook12.PNG">
+                <img src="../images/cook13.PNG">
+            </div>
+            <div class="bundle">
+                <h2 class="cookingTitle">1. 자취요리신 simple cooking </h2>
+                <p>'오늘은 어떤 요리를 먹어 볼까?'  <br>고민이신 분들을 위해 간단하고 빠르게 누구나 할 수 있는 요리를 알려드립니다. </p>
+                <a href="https://www.youtube.com/channel/UCC9pQY_uaBSa0WOpMNJHbEQ " target="_blank" class="theboki">
+                더보기</a>
+            </div>
+        </div>
+
+        
+
+
+        <div class="sector2">
+            <div class="cooking">                    
+                <img src="../images/cook14.PNG">
+                <img src="../images/cook15.PNG">
+                <img src="../images/cook16.PNG">
+            </div>
+            <div class="bundle">
+                <h2 class="cookingTitle">2. 꿀키의 요리레시피</h2>
+                <p>한끼를 먹어도 제대로 먹는다!<br>영화 및 드라마 속 요리부터 오감을 자극하는 요리까지~<br>제대로 차려 먹고싶다면 추천! </p>
+                <a href="https://www.youtube.com/c/honeykkicook/featured" target="_blank" class="theboki">
+                더보기</a>
+            </div>
+        </div>
+
+        <div class="sector3">
+            <div class="cooking">                    
+                <img src="../images/cook18.PNG">
+                <img src="../images/cook19.PNG">
+                <img src="../images/cook20.PNG">
+                <img src="../images/cook17.PNG">
+            </div>
+            <div class="bundle">
+                <h2 class="cookingTitle">3. 자취생으로 살아남기 onehomelife</h2>
+                <p>#오늘 한끼 #환상적 <br>자취생님들 우리 같이 살아남아 봅시다!<br>평소 식당에서 먹었던 음식을 재현하고 맛있는 한끼 식탁을 만들어드립니다!</p>
+                <a href="https://www.youtube.com/channel/UCjUXCK0Lu0cdR1Jj-A4Oy8A" target="_blank" class="theboki">
+                더보기</a>
+            </div>
+        </div>
+
+
+        
+        <footer>혼자서 무언가를 시작하려는 여러분에게 큰 힘이 되는 '나 혼자 산다'입니다.<br>
+            COPYRIGHTⒸ 2020-2021 나 혼자 산다. All rights reserved.
+
+        </footer>
+
+    </div>
+</body>
+</html>

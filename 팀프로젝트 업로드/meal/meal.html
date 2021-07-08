@@ -1,0 +1,192 @@
+<!--
+    작성자:김다운
+    학번:21801006
+    작성목적: 두번째 자취밥상 페이지 입니다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--반응형 웹으로 설정하겠습니다-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자취밥상</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #fffcf7;
+            font-family: 'Noto Sans KR', sans-serif;
+            
+        }
+
+        #logoStyle {
+            display:block; 
+            margin-left:auto; 
+            margin-right: auto; 
+            margin-top: 30px;
+        }
+
+        .frame{
+            margin: 30px 150px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav{
+            background-color: #5DAEDA;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            margin-top: 50px;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+
+
+        }
+        li {            
+            display: inline;				/*메뉴 한줄에 배열하기*/
+            text-align: center;
+            font-size: 18px;
+            margin:0;
+            margin-left: 30px;
+        }
+
+        li a {
+            color: #f9fbff;
+            text-decoration:none;
+        }
+
+        li a:hover {
+            background-color: rgb(17, 73, 138);
+        }
+
+        footer{
+            position: static; 
+            left:0px; 
+            bottom:0px; 
+            height:60px; 
+            width:100%; 
+            background:grey; 
+            color: white; 
+            text-align:center;
+        }
+        /*자취러들 모여라 표 부분*/
+        #board_area {
+            width: 900px;
+            position: relative;
+        }
+        .list-table {
+            margin-top: 20px;
+            width: 1100px;
+            text-align: center;
+        }
+        .list-table thead th{
+            height:40px;
+            border-top:2px solid #09C;
+            border-bottom:1px solid #CCC;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .list-table tbody td{
+            text-align:center;
+            padding:10px 0;
+            border-bottom:1px solid #CCC; height:20px;
+            font-size: 14px 
+        }
+
+        .card:hover {
+            background-color: rgb(255, 206, 223);
+        }
+
+        .box {
+            width:160px; 
+            height:200px; 
+            border-radius:10px; 
+            background-color: rgb(24, 11, 53); 
+            float:left; 
+            margin-right:70px; 
+            box-shadow: 6px 6px 6px 6px;
+            opacity: 0.7;
+            transition: opacity 1s;
+        }
+
+        .box:hover {
+            opacity: 1;
+        }
+
+        /* 화면 중간에 "난이도" 글자 색상 지정*/
+       #difficulty {
+           color: rgb(241, 72, 42);
+           
+       }
+
+       /* 화면 중간에 글 문단 표시 */
+       #contexpl {
+        width:250px; 
+        height:250px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+       }
+
+       /* 3개의 난이도 박스 내에 폰트 설정 */
+       .levelFont {
+        color: white; 
+        font-size: 25px; 
+        text-align:center; 
+        padding:20px;
+       }
+
+      
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <!--로고 배치-->
+        <img src="../images/logo_final.png" alt="logo" style="display:block; margin-left:auto; margin-right: auto; margin-top: 30px; width: 200px; height: 200px;">
+        <!--메뉴 배치-->
+        <ul class="nav">
+            <li><a class="nav-menu" href="../index.html">HOME</a></li>
+            <li><a class="nav-menu" href="../meal/meal.html">자취밥상</a></li>
+            <li><a class="nav-menu" href="../site/site.html">자취 <span style="color:rgb(255, 195, 84)">꿀</span> 사이트</a></li>
+            <li><a class="nav-menu" href="../community/community_list.html">자취러들 모여라</a></li>
+        </ul>
+
+
+        <!--자취밥상 본문 내용입니다-->
+        <div style="margin-top:70px;">
+            <img src="../images/cry.png" id="contexpl">
+            <h2 style="text-align: center;">혼자여도 괜찮아.....<br>요알못도 뚝딱 해결할 수 있는 요리레시피가 있으니까요!!!<br>요리의 <span id="difficulty">난이도</span>를 선택해주세요!</h2>
+        </div>    
+
+            <div  style= "margin-left:250px; margin-top:100px; margin-bottom:300px">
+                <div class="box">
+                    <a href="../meal/meal_3.html" style="text-decoration-line: none;">
+                        <p class="levelFont">난이도<br><span style="font-size:20px">(상)</span><br><span style="color: yellow">★★★</span></p></a>
+                </div>
+    
+                <div class="box">
+                    <a href="../meal/meal_2.html" style="text-decoration-line: none;">
+                        <p class="levelFont">난이도<br><span style="font-size:20px">(중)</span><br><span style="color: yellow">★★</span></p></a>
+                </div>
+
+                <div class="box">
+                    <a href="../meal/meal_1.html" style="text-decoration-line: none;">
+                        <p class="levelFont">난이도<br><span style="font-size:20px">(하)</span><br><span style="color: yellow">★</span></p></a>
+                </div>
+            </div>
+            
+
+      
+
+
+        <footer>혼자서 무언가를 시작하려는 여러분에게 큰 힘이 되는 '나 혼자 산다'입니다.<br>
+            COPYRIGHTⒸ 2020-2021 나 혼자 산다. All rights reserved.
+
+        </footer>
+
+
+    </div>
+</body>
